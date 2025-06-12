@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-sample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi-sample
+  template:
+    metadata:
+      labels:
+        app: fastapi-sample
+    spec:
+      containers:
+        - name: fastapi
+          image: dmarmijosa/fastapi-sample:0.1.0
+          ports:
+            - containerPort: 8000
