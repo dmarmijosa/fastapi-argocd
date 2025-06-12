@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: dmarmijosa/fastapi-sample:0.1.0
+          image: dmarmijosa/fastapi-sample:0.1.0   # imagen que acabas de subir
           ports:
             - containerPort: 8000
